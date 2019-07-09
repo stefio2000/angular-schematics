@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row add">
+    <div class="form-row">
+      <div class="input-group input-group-lg col-lg-12">
+        <input #TODO type="text"
+               class="form-control newTodoContent"
+               placeholder="type here your todo"
+               [formControl]="formCurrent"/>
+        <div class="input-group-append">
+          <button type="button"
+                  class="btn btn-primary"
+                  (click)="add()"
+                  [disabled]="formCurrent.pristine"
+          >+
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="form-row" *ngIf="formCurrent.hasError('required')">
+      <div class="error">Please fill the TODO title with a valid value</div>
+    </div>
+  </div>
+
+  <div class="row list">
+    <ng-container *ngFor="let todo of todos">
+      <app-edit [todo]="todo"></app-edit>
+    </ng-container>
+  </div>
+</div>

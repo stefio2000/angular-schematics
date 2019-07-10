@@ -1,6 +1,7 @@
 # DemoSchematics
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This project is used to be an example on how the angular schematics work and how to implemente them.
+The basic angular project allows to manage a TODO list. The TODOs are stored in memory.
 
 ## Development server
 

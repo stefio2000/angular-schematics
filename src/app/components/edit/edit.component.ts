@@ -20,12 +20,10 @@ export class EditComponent implements OnInit {
   }
 
   public remove(): void {
-    console.warn('removed');
     this.service.remove(this.todo);
   }
 
   public complete(): void {
-    console.warn('complete', this.todo.completed);
     this.todo.completed = !this.todo.completed;
   }
 

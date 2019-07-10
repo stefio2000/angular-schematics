@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
 import {TodoService} from '../../services/todo.service';
 import {TodoModel} from '../../models/todo.model';
 import {FormControl, Validator, Validators} from '@angular/forms';
@@ -28,6 +28,13 @@ export class ListComponent implements OnInit {
       const todo: TodoModel = new TodoModel(this.formCurrent.value);
       this.service.add(todo);
       this.formCurrent.reset();
+    }
+  }
+
+  @HostListener('window:keydown', ['$event'])
+  private onKey(event) {
+    if (event.key === 'Enter') {
+      this.add();
     }
   }
 }

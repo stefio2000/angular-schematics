@@ -11,6 +11,7 @@ export class TodoService {
 
   constructor() {
     this.todos = [];
+    this.todos.push(new TodoModel('test stef'));
   }
 
   public add(todo: TodoModel): void {

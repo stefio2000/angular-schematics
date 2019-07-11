@@ -2,6 +2,8 @@
   "name": "demo-schematics",
   "version": "0.0.0",
   "scripts": {
+    "schematics:build": "cd demoSchematics && npm run build",
+    "schematics:install": "npm link demoSchematics",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

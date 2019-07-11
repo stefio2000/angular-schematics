@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "MesMobileTemplateSchematic",
+  "title": "Mes Mobile Template Schematic",
+  "type": "object",
+  "description": "schema to use when you use the template schematic",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the person",
+      "examples": ["Stef", "Jim"],
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "lastName": {
+      "type": "string",
+      "description": "Last name of the person",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      },
+      "x-prompt": "The last name of the person:"
+    },
+    "gender": {
+      "type": "string",
+      "description": "The gender of the person",
+      "$default": {
+        "$source": "argv",
+        "index": 2
+      },
+      "x-prompt": {
+        "message": "The gender of the person",
+        "type": "list",
+        "items": [
+          {"value": "MALE", "label": "Male"},
+          {"value": "FEMALE", "label": "Female"},
+          {"value": "OTHER", "label": "Other"}
+        ]
+      }
+    }
+  },
+  "required": ["name", "lastName", "gender"]
+}

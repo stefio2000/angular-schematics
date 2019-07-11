@@ -1,0 +1,18 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "demo-schematics": {
+      "description": "A demo schematic.",
+      "factory": "./demo-schematics/index#demoSchematics"
+    },
+    "demo-options": {
+      "description": "A schematic with options.",
+      "factory": "./demo-options/index#demo"
+    },
+    "demo-schema": {
+      "description": "A schematic with options passed as a 'Schema' class.",
+      "factory": "./demo-schema/index#demo",
+      "schema": "./demo-schema/schema.json"
+    }
+  }
+}

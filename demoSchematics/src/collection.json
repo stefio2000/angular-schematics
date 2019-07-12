@@ -13,6 +13,11 @@
       "description": "A schematic with options passed as a 'Schema' class.",
       "factory": "./demo-schema/index#demo",
       "schema": "./demo-schema/schema.json"
+    },
+    "demo-template": {
+      "description": "A schematic that uses templates to create a component.",
+      "factory": "./demo-template/index#demo",
+      "schema": "./demo-template/schema.json"
     }
   }
 }

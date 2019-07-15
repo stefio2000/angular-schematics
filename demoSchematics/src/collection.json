@@ -18,6 +18,16 @@
       "description": "A schematic that uses templates to create a component.",
       "factory": "./demo-template/index#demo",
       "schema": "./demo-template/schema.json"
+    },
+    "demo-ng": {
+      "description": "A schematic that reproduce the ng generate behavior.",
+      "factory": "./demo-ng/index#demo",
+      "schema": "./demo-ng/schema.json"
+    },
+    "demo-modify-module": {
+      "description": "A schematic that modifies a module to declare a component.",
+      "factory": "./demo-modify-module/index#demo",
+      "schema": "./demo-modify-module/schema.json"
     }
   }
 }

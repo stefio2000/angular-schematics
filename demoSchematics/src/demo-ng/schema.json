@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "MesMobileTemplateSchematic",
+  "title": "Mes Mobile Template Schematic",
+  "type": "object",
+  "description": "schema to use when you use the template schematic",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the component",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "Name of the component:"
+    },
+    "content": {
+      "type": "string",
+      "description": "Content to display in your component",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      },
+      "x-prompt": "Content to display in your component:"
+    },
+    "project": {
+      "type": "string",
+      "description": "Generate a specific Angular CLI workspace project"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

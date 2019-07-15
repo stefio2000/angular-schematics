@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "MesMobileTemplateSchematic",
+  "title": "Mes Mobile Template Schematic",
+  "type": "object",
+  "description": "schema to use when you want to import a component in a module",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The project name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "path": {
+      "type": "string",
+      "description": "The project path",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      }
+    },
+    "module": {
+      "type": "string",
+      "description": "The module where we want to declare our component",
+      "$default": {
+        "$source": "argv",
+        "index": 2
+      }
+    }
+  }
+}

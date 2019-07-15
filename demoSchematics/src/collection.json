@@ -28,6 +28,11 @@
       "description": "A schematic that modifies a module to declare a component.",
       "factory": "./demo-modify-module/index#demo",
       "schema": "./demo-modify-module/schema.json"
+    },
+    "demo-modify-class": {
+      "description": "A schematic that modifies a class.",
+      "factory": "./demo-modify-class/index#demo",
+      "schema": "./demo-modify-class/schema.json"
     }
   }
 }

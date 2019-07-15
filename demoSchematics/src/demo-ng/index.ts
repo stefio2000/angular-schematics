@@ -1,4 +1,5 @@
-import {apply, mergeWith, move, Rule, SchematicContext, SchematicsException, Source, template, Tree, url} from '@angular-devkit/schematics';
+import {apply, mergeWith, move, Rule, SchematicContext,
+  SchematicsException, Source, template, Tree, url} from '@angular-devkit/schematics';
 import {Schema} from './schema';
 import * as strings from '@angular-devkit/core/src/utils/strings';
 import {parseName} from '@schematics/angular/utility/parse-name';

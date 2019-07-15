@@ -1,7 +1,7 @@
 {
   "name": "demo-schematics",
-  "version": "0.0.0",
-  "description": "A blank schematics",
+  "version": "1.0.0",
+  "description": "A demonstration and tutorial of Angular schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "build:watch": "tsc -p tsconfig.json --watch",
@@ -10,7 +10,7 @@
   "keywords": [
     "schematics"
   ],
-  "author": "",
+  "author": "Stéphane DAVID",
   "license": "MIT",
   "schematics": "./src/collection.json",
   "dependencies": {

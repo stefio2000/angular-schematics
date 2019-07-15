@@ -1,23 +1,23 @@
 <div class="container">
-  <div class="input-group">
 
-    <div class="input-group-prepend">
-      <div class="input-group-text" (onclick)="complete()">
-        <button class="btn btn-light complete"
-                type="button"
-                (click)="complete()">&#10004;</button>
-      </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend" (onclick)="complete()">
+      <button class="btn  complete"
+              type="button"
+              [ngClass]="todo?.completed ? 'btn-secondary': 'btn-outline-secondary'"
+              (click)="complete()">{{ todo?.completed ? 'treated': 'complete'}}
+      </button>
+    </div>
 
-      <input type="text"
-             class="form-control"
-             [ngClass]="todo?.completed ? 'completed': ''"
-             [value]="todo.title"
-             title="at {{todo?.date | date : 'MM/dd/yyyy'}}">
+    <input type="text"
+           class="form-control"
+           [ngClass]="todo?.completed ? 'completed': ''"
+           [value]="todo.title"
+           title="at {{todo?.date | date : 'MM/dd/yyyy'}}">
 
-      <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button" (click)="remove()">X</button>
-      </div>
-
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" (click)="remove()">X</button>
     </div>
   </div>
+
 </div>

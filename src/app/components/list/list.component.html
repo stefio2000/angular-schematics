@@ -22,8 +22,10 @@
   </div>
 
   <div class="row list">
-    <ng-container *ngFor="let todo of todos">
-      <app-edit [todo]="todo"></app-edit>
-    </ng-container>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let todo of todos">
+        <app-edit [todo]="todo"></app-edit>
+      </li>
+    </ul>
   </div>
 </div>

@@ -1,5 +1,5 @@
 # DemoSchematics
-
+https://github.com/stefio2000/angular-schematics
 This project is used to be an example on how the angular schematics work and how to implemente them.
 The basic angular project allows to manage a TODO list. The TODOs are stored in memory.
 
@@ -26,4 +26,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-``
